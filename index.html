@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AREA Calculator</title>
+</head>
+<body>
+    <form onsubmit="CalculateArea(); return false">
+        <label for="base">Enter the base of triangle </label>
+        <input type="number" name="baseoftri" id="base" placeholder="Enter the base of triangle"><br>
+        <label for="height">Enter the height of triangler</label>
+        <input type="number" name="heightoftri" id="height" placeholder="Enter the height of triangler"><br>
+        <button>Calculate</button>
+
+    </form>
+    <script>
+        function CalculateArea(){
+        let base1=document.getElementById("base").value;
+        let height1=document.getElementById("height").value;
+        let area=1/2*base1*height1;
+        document.write(area);
+        }
+    </script>
+</body>
+</html>
